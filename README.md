@@ -15,7 +15,7 @@ Starter kit for the MTA hackathon
 #### Setting up a react environment
 
 1. [Clone this git repository](https://github.com/omrisk/mta-hack-project.git)
-2.Open the folder in the IDE/editor of your choice
+2. Open the folder in the IDE/editor of your choice
 3. Open a console in the src dir and run `npm install`
 4. After the dependencies install run `npm start` and you should get a localhost running a "Hello World!" landing page
 
