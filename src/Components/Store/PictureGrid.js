@@ -43,7 +43,8 @@ const tilesData = [
 const PictureGrid = () => (
     <div style={styles.root}>
         <GridList style={styles.gridList} cellHeight={180}>
-            <Subheader>December</Subheader>
+            <div id="store-title"><Subheader><b> Store </b></Subheader></div>
+
             {tilesData.map((tile) => (
                 <GridTile
                     key={tile.img}

@@ -16,27 +16,13 @@ import {
 } from 'material-ui/styles/colors';
 
 
-const style = {margin: 5};
-
 
 const Store = () => (
-    <List>
-        <ListItem
-            disabled={true}
-            leftAvatar={
-                <Avatar
-                    icon={<FontIcon className="muidocs-icon-communication-voicemail" />}
-                    color={blue300}
-                    backgroundColor={pink400}
-                    size={100}
-                    style={style}
-                />
-            }
-        >
-            <PictureGrid > </PictureGrid >
 
-        </ListItem>
-    </List>
+    <div>
+        <PictureGrid > </PictureGrid >
+    </div>
+
 );
 
 export default Store;
