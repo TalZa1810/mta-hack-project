@@ -1,114 +1,129 @@
 .App {
-  text-align: center;
+    text-align: center;
+    background-color: lightcyan;
 }
 
 .App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+    animation: App-logo-spin infinite 20s linear;
+    height: 80px;
 }
 
 .App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
+    background-color: #222;
+    height: 150px;
+    padding: 20px;
+    color: white;
 }
 
 .App-intro {
-  font-size: large;
+    font-size: large;
 }
 
 @keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
 }
 
-.header{
+.header {
+    background-color: lightblue !important;
+}
+
+.header-left {
 
 }
 
-.header-left{
+.header-right {
 
 }
 
-.header-right{
-
+.student-name {
+    font-size: 40px;
 }
 
-.student-name{
-  font-size: 40px;
-}
-
-.level-progress{
+.level-progress {
 
 }
 
 .avatar-store-btn {
-  position: absolute;
-  top: 0;
-  z-index: 2;
-  right: 20px;
-  top: 20px;
+    position: absolute;
+    top: 0;
+    z-index: 2;
+    right: 20px;
+    top: 20px;
 }
 
 .header-status {
-  position: relative;
-  display: inline-block;
-  width: 50%;
-  clear: both;
-  padding: 20px;
-  box-sizing: border-box;
+    position: relative;
+    display: inline-block;
+    width: 50%;
+    clear: both;
+    padding: 20px;
+    box-sizing: border-box;
 }
 
 .points-next-level {
-  display: inline-block;
-  /* float: left; */
-  padding: 0;
-  margin: 0;
+    display: inline-block;
+    /* float: left; */
+    padding: 0;
+    margin: 0;
 }
-.progress-row>div {
-  height: 30px!important;
-  width: 300px!important;
+
+.progress-row > div {
+    height: 30px !important;
+    width: 300px !important;
 }
 
 .level-number {
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
 }
+
 .progress-row {
-  line-height: 44px;
-  clear: both;
-  position: relative;
-  text-align: left;
+    line-height: 44px;
+    clear: both;
+    position: relative;
+    text-align: left;
 }
+
 .student-name {
-  font-size: 18px;
-  position: absolute;
-  top: 80px;
-  left: 155px;
+    font-size: 18px;
+    position: absolute;
+    top: 80px;
+    left: 155px;
 }
 
-.progress-row:nth-child(1)>div>div {
-  background-color: #fc1!important;
+.progress-row:nth-child(1) > div > div {
+    background-color: #73a1ff !important;
+    border: solid 1px;
 }
 
-.header{
-  background-color: lightgray ;
+.progress-row:nth-child(2) > div > div {
+    background-color: #73a1ff !important;
+    border: solid 1px;
+}
+
+.header {
+    background-color: lightgray;
 }
 
 .student-avatar {
-  position: absolute;
-  left: 40px;
-  top: 20px;
-  width: 120px!important;
-  height: 120px!important;
-  border: 5px #fff solid;
-  box-shadow: 1px 1px 5px #454545;
+    position: absolute;
+    left: 40px;
+    top: 20px;
+    width: 120px !important;
+    height: 120px !important;
+    border: 5px #fff solid;
+    box-shadow: 1px 1px 5px #454545;
 }
-.header-profile{
-  position: relative;
-  display: inline-block;
-  float: left;
-  width: 45%;
-  height: 200px;
+
+.header-profile {
+    position: relative;
+    display: inline-block;
+    float: left;
+    width: 45%;
+    height: 200px;
 }
