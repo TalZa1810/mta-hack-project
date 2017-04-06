@@ -41,6 +41,7 @@ export default class PictureGrid extends React.Component {
             case "Outfit":
                 alert(this.title);
                 break;
+
         }
     }
 
