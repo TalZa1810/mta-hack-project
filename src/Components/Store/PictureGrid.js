@@ -22,12 +22,20 @@ const styles = {
 
 const tilesData = [
     {
-        img: 'https://us.123rf.com/450wm/popmarleo/popmarleo1306/popmarleo130600001/20329169-hipster-clothing-and-accessories-collection.jpg?ver=6',
-        title: 'Accessories',
+        img: 'https://image.ibb.co/nr7wwF/hat.png',
+        title: 'Hat',
     },
     {
-        img: 'http://www.pitt.edu/~gmd37/teamwebpage/bike.jpg',
-        title: 'Outfit',
+        img: 'https://image.ibb.co/miDrVa/pants.png',
+        title: 'Pants',
+    },
+    {
+        img: 'https://image.ibb.co/jfXkqa/pipe.png',
+        title: 'Pipe',
+    },
+    {
+        img: 'https://image.ibb.co/kV6pGF/sunglasses.png',
+        title: 'Sunglasses',
     }
 ];
 
@@ -35,30 +43,36 @@ export default class PictureGrid extends React.Component {
 
     imageClick() {
         switch(this.title){
-            case "Accessories":
+            case "Hat":
                 alert(this.title);
                 break;
-            case "Outfit":
+            case "Pants":
                 alert(this.title);
                 break;
-
+            case "Pipe":
+                alert(this.title);
+                break;
+            case "Sunglasses":
+                alert(this.title);
+                break;
         }
     }
 
     render() {
         return (<div style={styles.root}>
             <GridList style={styles.gridList} cellHeight={180}>
-                <div id="store-title"><Subheader><b> Store </b></Subheader></div>
 
-                {tilesData.map((tile) => (
-                    <GridTile
-                        key={tile.img}
-                        title={tile.title}
-                        actionIcon={<IconButton>
-                            <StarBorder color="white"/></IconButton>}>
-                        <img onClick={this.imageClick.bind(tile)} src={tile.img}/>
-                    </GridTile>
-                ))}
+                {
+                    tilesData.map((tile) => (
+                        <GridTile
+
+                            key={tile.img}
+                            title={tile.title}
+                            actionIcon={<IconButton>
+                                <StarBorder color="white"/></IconButton>}>
+                            <img onClick={this.imageClick.bind(tile)} src={tile.img}/>
+                        </GridTile>
+                    ))}
             </GridList>
         </div>)
     }

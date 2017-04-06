@@ -37,7 +37,7 @@ export default class StoreDialog extends React.Component {
             <div>
                 <RaisedButton className="avatar-store-btn" label="Go to Avatar Store" onClick={this.handleOpen} />
                 <Dialog
-                    title="Dialog With Actions"
+                    title="Avatar Store"
                     actions={actions}
                     modal={false}
                     open={this.state.open}
