@@ -4,7 +4,7 @@ import './App.css';
 import RaisedButton from 'material-ui/RaisedButton';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import StudentProfile from "../StudentProfile/StudentProfile.js";
-
+import SubjectItemContainer from '../SubjectItemContainer/SubjectItemContainer'
 
 
 class App extends Component {
@@ -16,17 +16,8 @@ class App extends Component {
         return (
             <MuiThemeProvider>
                 <div className="App">
-                    <RaisedButton label="Default" style={style}/>
-                    <div className="App-header">
-                        <img src={logo} className="App-logo" alt="logo"/>
-                        <h2>Hello World!</h2>
-                    </div>
-                    <p className="App-intro">
-                        To get started, edit <code>src/Components/App/App.js</code> and save to reload.<br/>
-                        The file watcher is still in beta so it may not work perfectly
 
-                    </p>
-                    <StudentProfile> </StudentProfile>
+                    <SubjectItemContainer> </SubjectItemContainer>
                 </div>
             </MuiThemeProvider>
         );
