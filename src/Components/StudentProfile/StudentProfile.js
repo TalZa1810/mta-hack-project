@@ -29,12 +29,16 @@ class StudentProfile extends React.Component {
                 <div className="header-status">
                     <div className="progress-row">
                         <h3 className="level-number">Level 5</h3>
-                        <StudentProgress className="level-progress"> </StudentProgress >
+                        <StudentProgress
+                            progress={56}
+                            className="level-progress"> </StudentProgress >
                     </div>
 
                     <div className="progress-row">
                         <h4 className="points-next-level"> XP 2 next lvl </h4>
-                        <StudentProgress className="student-progress"> </StudentProgress >
+                        <StudentProgress
+                            progress={25}
+                            className="student-progress"> </StudentProgress >
                     </div>
                 </div>
                 <StoreDialog onPictureClicked={this.updateImage.bind(this)}/>

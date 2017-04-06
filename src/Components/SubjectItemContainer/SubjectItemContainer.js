@@ -16,15 +16,16 @@ class SubjectItemContainer extends React.Component {
     };
 
     handleOnAnswerSubmit(questionSubmitted) {
-        this.state.subjectItems[questionSubmitted].points = 'Awaiting teacher\'s grade';
+        this.state.subjectItems[questionSubmitted].points = Math.round(Math.random() * 10);
 
         this.setState(this.state);
-
-        setTimeout(()=> {
-            this.state.subjectItems[questionSubmitted].points = Math.round(Math.random() * 10);
-
-            this.setState(this.state);
-        }, 5000);
+        // this.state.subjectItems[questionSubmitted].points = 'Awaiting teacher\'s grade';
+        //
+        // this.setState(this.state);
+        //
+        // setTimeout(()=> {
+        //
+        // }, 5000);
     }
 
     state = {
