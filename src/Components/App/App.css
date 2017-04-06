@@ -98,10 +98,10 @@
 
 .student-avatar {
   position: absolute;
-  left: 50px;
-  top: 50px;
-  width: 80px!important;
-  height: 80px!important;
+  left: 40px;
+  top: 20px;
+  width: 120px!important;
+  height: 120px!important;
   border: 5px #fff solid;
   box-shadow: 1px 1px 5px #454545;
 }
@@ -109,6 +109,6 @@
   position: relative;
   display: inline-block;
   float: left;
-  width: 50%;
+  width: 45%;
   height: 200px;
 }
