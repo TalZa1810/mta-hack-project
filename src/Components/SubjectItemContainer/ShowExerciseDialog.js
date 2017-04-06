@@ -57,6 +57,7 @@ class ShowExerciseDialog extends React.Component {
                     open={this.state.open}
                 >
                     {this.props.questionText}
+                    <input type="text" placeholder="Enter your answer here"/>
                 </Dialog>
             </div>
         );

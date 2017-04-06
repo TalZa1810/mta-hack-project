@@ -1,34 +1,26 @@
 import React, {Component} from 'react';
+import logo from '../../logo.svg';
 import './App.css';
+import RaisedButton from 'material-ui/RaisedButton';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import StudentProfile from "../StudentProfile/StudentProfile.js";
-
-
+import SubjectItemContainer from '../SubjectItemContainer/SubjectItemContainer'
 
 
 class App extends Component {
-
-    constructor(props){
-        super(props);
-        this.state = {
-            onOpenDialog: false
-        }
-    }
-
-    openDialog = () => {
-        this.setState({onOpenDialog: true})
-    }
-
     render() {
-        const { onOpenDialog } = this.state;
+        let style = {
+            margin: 12,
+        };
+
         return (
             <MuiThemeProvider>
                 <div className="App">
-                    <StudentProfile onOpenDialog = {this.openDialog}> </StudentProfile>
-                 </div>
+                    <StudentProfile/>
+                    <SubjectItemContainer/>
+                </div>
             </MuiThemeProvider>
-
-        )
+        );
     }
 }
 

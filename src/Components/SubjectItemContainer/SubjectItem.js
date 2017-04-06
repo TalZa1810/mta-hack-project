@@ -14,6 +14,7 @@ class SubjectItem extends React.Component {
 
         return (
             <div>
+                <FlatButton style={style} label={this.props.questionText} disabled={true}></FlatButton>
                 <ShowExerciseDialog
                     questionNumber={this.props.questionNumber}
                     questionText={this.props.questionText}
@@ -23,6 +24,7 @@ class SubjectItem extends React.Component {
 
                 <FlatButton style={style} label={this.props.points} disabled={true}></FlatButton>
                 <FlatButton style={style} label={this.props.teacherRating} disabled={true}></FlatButton>
+                <hr/>
             </div>
         )
 

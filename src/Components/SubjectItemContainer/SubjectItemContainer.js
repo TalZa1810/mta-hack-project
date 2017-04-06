@@ -1,5 +1,6 @@
 import SubjectItem from './SubjectItem';
 import * as React from 'react';
+import {Table, TableBody, TableHeader, TableHeaderColumn, TableRow, TableRowColumn} from 'material-ui/Table';
 
 class SubjectItemContainer extends React.Component {
     handleRaiseAQuestionClick() {
@@ -15,12 +16,12 @@ class SubjectItemContainer extends React.Component {
     };
 
     handleOnAnswerSubmit(questionSubmitted) {
-        this.state.subjectItems[questionSubmitted].points = Math.round(Math.random() *10);
+        this.state.subjectItems[questionSubmitted].points = Math.round(Math.random() * 10);
 
         this.setState(this.state);
 
-        setTimeout(()=>{
-            this.state.subjectItems[questionSubmitted].teacherRating = Math.round(Math.random() *10);
+        setTimeout(()=> {
+            this.state.subjectItems[questionSubmitted].teacherRating = Math.round(Math.random() * 10);
 
             this.setState(this.state);
         }, 5000);
@@ -54,6 +55,7 @@ class SubjectItemContainer extends React.Component {
     render() {
         return (
             <div className="subject-container">
+
                 {this.state.subjectItems.map((item, index)=> {
                     return <SubjectItem
                         questionNumber={item.questionNumber}
@@ -68,6 +70,7 @@ class SubjectItemContainer extends React.Component {
                         teacherRating={item.teacherRating}
                     />
                 })}
+
 
             </div>
         )
