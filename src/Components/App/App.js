@@ -11,8 +11,7 @@ class App extends Component {
         return (<MuiThemeProvider>
         <div className="App">
             <StudentProfile> </StudentProfile>
-            <Store></Store>
-            </div>
+         </div>
             </MuiThemeProvider>);
     }
 }

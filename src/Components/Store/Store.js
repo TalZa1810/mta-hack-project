@@ -1,9 +1,6 @@
 import React from 'react';
-import Avatar from 'material-ui/Avatar';
-import FontIcon from 'material-ui/FontIcon';
-import List from 'material-ui/List/List';
-import ListItem from 'material-ui/List/ListItem';
 import PictureGrid from './PictureGrid';
+import Dialog from 'material-ui/Dialog';
 
 
 import {
@@ -20,7 +17,7 @@ import {
 const Store = () => (
 
     <div>
-        <PictureGrid > </PictureGrid >
+                <PictureGrid > </PictureGrid >
     </div>
 
 );

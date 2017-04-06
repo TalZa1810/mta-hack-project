@@ -25,7 +25,10 @@ const StudentProfile = () => (
             </div>
         </div>
 
-        <RaisedButton className="avatar-store-btn" label="Go to Avatar Store"/>
+        <RaisedButton className="avatar-store-btn" label="Go to Avatar Store" OnClick />
+
+
+
     </div>
 );
 

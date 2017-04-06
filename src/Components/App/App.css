@@ -79,7 +79,7 @@
   line-height: 44px;
   clear: both;
   position: relative;
-  text-align: -webkit-auto;
+  text-align: left;
 }
 .student-name {
   font-size: 18px;
