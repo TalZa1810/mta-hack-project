@@ -4,20 +4,22 @@ import * as React from 'react';
 import FlatButton from 'material-ui/FlatButton';
 
 class SubjectItem extends React.Component {
+
     render() {
         let style = {
             margin: 6
         };
 
+
         return (
             <div>
-                <RaisedButton
-                    style={style}
-                    className="subject-item"
-                    primary={false}
-                    label="Raise a Question"
-                    onClick={this.props.handleRaiseAQuestionClick}
-                />
+                {/*<RaisedButton*/}
+                {/*style={style}*/}
+                {/*className="subject-item"*/}
+                {/*primary={false}*/}
+                {/*label="Raise a Question"*/}
+                {/*onClick={this.props.handleRaiseAQuestionClick}*/}
+                {/*/>*/}
 
                 <RaisedButton
                     style={style}
@@ -26,7 +28,14 @@ class SubjectItem extends React.Component {
                     onClick={this.props.handleSubmitClick}
                 />
 
-                <FlatButton style={style} label={this.props.title} disabled={true}></FlatButton>
+                <RaisedButton
+                    style={style}
+                    label={this.props.title}
+                    onClick={()=> {
+                        this.props.handleExerciseClick(event,4);
+                    }}
+                />
+
                 <FlatButton style={style} label={this.props.points} disabled={true}></FlatButton>
                 <FlatButton style={style} label={this.props.teacherRating} disabled={true}></FlatButton>
             </div>
