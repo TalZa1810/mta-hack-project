@@ -2,6 +2,7 @@ import './SubjectItem.css';
 import RaisedButton from 'material-ui/RaisedButton';
 import * as React from 'react';
 import FlatButton from 'material-ui/FlatButton';
+import ShowExerciseDialog from './ShowExerciseDialog';
 
 class SubjectItem extends React.Component {
 
@@ -13,27 +14,11 @@ class SubjectItem extends React.Component {
 
         return (
             <div>
-                {/*<RaisedButton*/}
-                {/*style={style}*/}
-                {/*className="subject-item"*/}
-                {/*primary={false}*/}
-                {/*label="Raise a Question"*/}
-                {/*onClick={this.props.handleRaiseAQuestionClick}*/}
-                {/*/>*/}
-
-                <RaisedButton
-                    style={style}
-                    primary={true}
-                    label="Submit an answer"
-                    onClick={this.props.handleSubmitClick}
-                />
-
-                <RaisedButton
-                    style={style}
-                    label={this.props.title}
-                    onClick={()=> {
-                        this.props.handleExerciseClick(event,4);
-                    }}
+                <ShowExerciseDialog
+                    questionNumber={this.props.questionNumber}
+                    questionText={this.props.questionText}
+                    title={this.props.title}
+                    handleOnAnswerSubmit={this.props.handleOnAnswerSubmit}
                 />
 
                 <FlatButton style={style} label={this.props.points} disabled={true}></FlatButton>
