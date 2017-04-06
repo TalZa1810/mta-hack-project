@@ -2,7 +2,6 @@ import React from 'react';
 import LinearProgress from 'material-ui/LinearProgress';
 
 
-
 import {
     blue300,
     indigo900,
@@ -11,9 +10,6 @@ import {
     pink400,
 
 } from 'material-ui/styles/colors';
-
-
-
 
 export default class StudentProgress extends React.Component {
 

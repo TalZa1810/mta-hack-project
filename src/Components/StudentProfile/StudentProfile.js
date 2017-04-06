@@ -1,35 +1,41 @@
 import React from 'react';
 import Avatar from 'material-ui/Avatar';
-import RaisedButton from 'material-ui/RaisedButton';
+import StoreDialog from '../Store/StoreDialog';
 import StudentProgress from './StudentProgress';
 
 
-const StudentProfile = () => (
 
-    <div className="header">
+class StudentProfile extends React.Component {
 
-        <div className="header-profile">
-            <Avatar className="student-avatar"> </Avatar>
-            <h1 className="student-name">Welcome Tal Zaidman </h1>
-        </div>
-        <div className="header-status">
-            <div className="progress-row">
-                <h3 className="level-number">Level 5</h3>
-                <StudentProgress className="level-progress"> </StudentProgress >
-            </div>
+    render() {
+        const { onOpenDialog } = this.props;
+        return (
 
-            <div className="progress-row">
-                <h4 className="points-next-level"> XP 2 next lvl </h4>
-                <StudentProgress className="student-progress"> </StudentProgress >
+                <div className="header">
 
-            </div>
-        </div>
+                    <div className="header-profile">
+                        <Avatar className="student-avatar"> </Avatar>
+                        <h1 className="student-name">Welcome Tal Zaidman </h1>
+                    </div>
+                    <div className="header-status">
+                        <div className="progress-row">
+                            <h3 className="level-number">Level 5</h3>
+                            <StudentProgress className="level-progress"> </StudentProgress >
+                        </div>
 
-        <RaisedButton className="avatar-store-btn" label="Go to Avatar Store" OnClick />
+                        <div className="progress-row">
+                            <h4 className="points-next-level"> XP 2 next lvl </h4>
+                            <StudentProgress className="student-progress"> </StudentProgress >
+
+                        </div>
+                    </div>
+                    <StoreDialog  />
 
 
+                </div>
+        );
+    }
+};
 
-    </div>
-);
 
 export default StudentProfile;
