@@ -3,6 +3,9 @@ import logo from '../../logo.svg';
 import './App.css';
 import RaisedButton from 'material-ui/RaisedButton';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
+import StudentProfile from "../StudentProfile/StudentProfile.js";
+
+
 
 class App extends Component {
     render() {
@@ -23,6 +26,7 @@ class App extends Component {
                         The file watcher is still in beta so it may not work perfectly
 
                     </p>
+                    <StudentProfile> </StudentProfile>
                 </div>
             </MuiThemeProvider>
         );
