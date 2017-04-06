@@ -24,7 +24,7 @@ class StudentProfile extends React.Component {
                             src={this.state.profileImage}
                     />
 
-                    <h1 className="student-name"> Welcome Tal Zaidman </h1>
+                    <div id="student-name"> Welcome Tal Zaidman</div>
                 </div>
                 <div className="header-status">
                     <div className="progress-row">

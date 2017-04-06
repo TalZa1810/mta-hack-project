@@ -32,28 +32,24 @@
     background-color: lightblue !important;
 }
 
-.header-left {
-
-}
-
-.header-right {
-
-}
-
-.student-name {
-    font-size: 40px;
-}
-
-.level-progress {
-
+#student-name {
+   position: relative;
+    font-size: 35px;
+    left:80px;
+    top:65px;
 }
 
 .avatar-store-btn {
     position: absolute;
-    top: 0;
     z-index: 2;
-    right: 20px;
-    top: 20px;
+    right: 40px;
+    top: 40px;
+}
+
+.avatar-store-btn > img {
+    width: 100px;
+    height: 100px;
+
 }
 
 .header-status {

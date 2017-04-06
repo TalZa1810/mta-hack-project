@@ -40,7 +40,10 @@ export default class StoreDialog extends React.Component {
 
         return (
             <div>
-                <RaisedButton className="avatar-store-btn" label="Go to Avatar Store" onClick={this.handleOpen} />
+                {/*<RaisedButton className="avatar-store-btn"  onClick={this.handleOpen} img="http://icons.iconarchive.com/icons/paomedia/small-n-flat/1024/shop-icon.png" />*/}
+
+                <button className="avatar-store-btn" onClick={this.handleOpen}><img src="http://icons.iconarchive.com/icons/paomedia/small-n-flat/1024/shop-icon.png" /></button>
+
                 <Dialog
                     title="Avatar Store"
                     actions={actions}
