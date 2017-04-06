@@ -18,7 +18,12 @@ export default class StoreDialog extends React.Component {
         this.setState({open: false});
     };
 
+    onPictureClicked = pictureId =>{
+        console.log(pictureId);
+    }
+
     render() {
+
         const actions = [
             <FlatButton
                 label="Cancel"
@@ -43,8 +48,7 @@ export default class StoreDialog extends React.Component {
                     open={this.state.open}
                     onRequestClose={this.handleClose}
                 >
-                    <PictureGrid > </PictureGrid >
-                    The actions in this window were passed in as an array of React objects.
+                    <PictureGrid onPictureClicked={this.props.onPictureClicked}> </PictureGrid >
                 </Dialog>
             </div>
         );

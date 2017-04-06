@@ -4,19 +4,25 @@ import StoreDialog from '../Store/StoreDialog';
 import StudentProgress from './StudentProgress';
 
 
-
 class StudentProfile extends React.Component {
+    state = {
+        profileImage: "https://image.ibb.co/dj3rVa/hair.png"
+    };
+
+    updateImage = (img) => {
+        console.log(img);
+        this.setState({profileImage: img});
+    }
 
     render() {
-        const { } = this.props;
+        const {} = this.props;
         return (
 
             <div className="header">
                 <div className="header-profile">
                     <Avatar className="student-avatar"
-                            src="https://image.ibb.co/dj3rVa/hair.png"
+                            src={this.state.profileImage}
                     />
-
 
                     <h1 className="student-name"> Welcome Tal Zaidman </h1>
                 </div>
@@ -31,11 +37,12 @@ class StudentProfile extends React.Component {
                         <StudentProgress className="student-progress"> </StudentProgress >
                     </div>
                 </div>
-                <StoreDialog  />
+                <StoreDialog onPictureClicked={this.updateImage.bind(this)}/>
             </div>
         );
     }
-};
+}
+;
 
 
 export default StudentProfile;

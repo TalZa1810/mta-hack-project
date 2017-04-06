@@ -16,12 +16,12 @@ class SubjectItemContainer extends React.Component {
     };
 
     handleOnAnswerSubmit(questionSubmitted) {
-        this.state.subjectItems[questionSubmitted].points = Math.round(Math.random() * 10);
+        this.state.subjectItems[questionSubmitted].points = 'Awaiting teacher\'s grade';
 
         this.setState(this.state);
 
         setTimeout(()=> {
-            this.state.subjectItems[questionSubmitted].teacherRating = Math.round(Math.random() * 10);
+            this.state.subjectItems[questionSubmitted].points = Math.round(Math.random() * 10);
 
             this.setState(this.state);
         }, 5000);
@@ -39,13 +39,13 @@ class SubjectItemContainer extends React.Component {
             title: "Exercise 1",
         }, {
             questionNumber: 1,
-            questionText: 'What is the capital of Norway?',
+            questionText: 'What is 10 * 35?',
             points: "Not Graded",
             teacherRating: "Not Rated",
             title: "Exercise 2",
         }, {
             questionNumber: 2,
-            questionText: 'What is the complexity runtime of D\'jakstra over an non-cyclical graph?',
+            questionText: 'What is 2^3?',
             points: "Not Graded",
             teacherRating: "Not Rated",
             title: "Exercise 3",

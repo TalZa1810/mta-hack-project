@@ -41,36 +41,20 @@ const tilesData = [
 
 export default class PictureGrid extends React.Component {
 
-    imageClick() {
-        switch(this.title){
-            case "Hat":
-                alert(this.title);
-                break;
-            case "Pants":
-                alert(this.title);
-                break;
-            case "Pipe":
-                alert(this.title);
-                break;
-            case "Sunglasses":
-                alert(this.title);
-                break;
-        }
-    }
-
     render() {
         return (<div style={styles.root}>
             <GridList style={styles.gridList} cellHeight={180}>
-
                 {
                     tilesData.map((tile) => (
                         <GridTile
-
                             key={tile.img}
                             title={tile.title}
                             actionIcon={<IconButton>
                                 <StarBorder color="white"/></IconButton>}>
-                            <img onClick={this.imageClick.bind(tile)} src={tile.img}/>
+                            <img onClick={() => {
+                                this.props.onPictureClicked(tile.img);
+                            }}
+                                 src={tile.img}/>
                         </GridTile>
                     ))}
             </GridList>

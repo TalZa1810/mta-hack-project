@@ -7,14 +7,22 @@ import ShowExerciseDialog from './ShowExerciseDialog';
 class SubjectItem extends React.Component {
 
     render() {
-        let style = {
-            margin: 6
+        let styleQuestionBtn = {
+            margin: 6,
+            backgroundColor: 'lightYellow',
+            color: 'black'
         };
+        let styleAnswerButton = {
+            margin: 6,
+            border: 'solid 1px',
+        };
+        let styleItem = {
 
-
+        };
         return (
-            <div>
-                <FlatButton style={style} label={this.props.questionText} disabled={true}></FlatButton>
+            <div style={styleItem}>
+                <FlatButton style={styleQuestionBtn} label={this.props.questionText}/>
+
                 <ShowExerciseDialog
                     questionNumber={this.props.questionNumber}
                     questionText={this.props.questionText}
@@ -22,8 +30,8 @@ class SubjectItem extends React.Component {
                     handleOnAnswerSubmit={this.props.handleOnAnswerSubmit}
                 />
 
-                <FlatButton style={style} label={this.props.points} disabled={true}></FlatButton>
-                <FlatButton style={style} label={this.props.teacherRating} disabled={true}></FlatButton>
+                <FlatButton style={styleAnswerButton}
+                            label={`Points Awarded:${this.props.points}`}/>
                 <hr/>
             </div>
         )
