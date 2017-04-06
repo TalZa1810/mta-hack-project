@@ -22,3 +22,112 @@
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
+
+.header{
+
+}
+
+.header-left{
+
+}
+
+.header-right{
+
+}
+
+.student-name{
+  font-size: 40px;
+}
+
+.level-progress{
+
+}
+
+.avatar-store-btn {
+  position: absolute;
+  top: 0;
+  z-index: 2;
+  right: 20px;
+  top: 20px;
+}
+
+.header-status {
+  position: relative;
+  display: inline-block;
+  width: 50%;
+  clear: both;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.points-next-level {
+  display: inline-block;
+  /* float: left; */
+  padding: 0;
+  margin: 0;
+}
+.progress-row>div {
+  height: 30px!important;
+  width: 300px!important;
+}
+
+.level-number {
+  margin: 0;
+  padding: 0;
+}
+.progress-row {
+  line-height: 44px;
+  clear: both;
+  position: relative;
+  text-align: -webkit-auto;
+}
+.student-name {
+  font-size: 18px;
+  position: absolute;
+  top: 80px;
+  left: 155px;
+}
+
+.progress-row:nth-child(1)>div>div {
+  background-color: #fc1!important;
+}
+
+.header{
+  background-color: lightgray ;
+}
+
+.student-avatar {
+  position: absolute;
+  left: 50px;
+  top: 50px;
+  width: 80px!important;
+  height: 80px!important;
+  border: 5px #fff solid;
+  box-shadow: 1px 1px 5px #454545;
+}
+.header-profile{
+  position: relative;
+  display: inline-block;
+  float: left;
+  width: 50%;
+  height: 200px;
+}
+.student-progress{
+
+}
+
+.level-number{
+
+}
+
+.points{
+
+}
+
+.points-next-level{
+
+}
+
+.avatar-store-btn{
+
+}

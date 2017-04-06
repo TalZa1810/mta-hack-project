@@ -1,47 +1,32 @@
 import React from 'react';
 import Avatar from 'material-ui/Avatar';
-import FontIcon from 'material-ui/FontIcon';
-import List from 'material-ui/List/List';
-import ListItem from 'material-ui/List/ListItem';
+import RaisedButton from 'material-ui/RaisedButton';
 import StudentProgress from './StudentProgress';
 
 
-import {
-    blue300,
-    indigo900,
-    orange200,
-    deepOrange300,
-    pink400,
-
-} from 'material-ui/styles/colors';
-
-
-const style = {margin: 5};
-
-
 const StudentProfile = () => (
-    <List>
 
-        <ListItem
-            disabled={true}
-            leftAvatar={
-                <Avatar
-                    icon={<FontIcon className="muidocs-icon-communication-voicemail" />}
-                    color={blue300}
-                    backgroundColor={pink400}
-                    size={100}
-                    style={style}
-                />
-            }
-        >
-            <b> Welcome Tal Zaidman </b>
-            <StudentProgress > </StudentProgress >
-            <StudentProgress > </StudentProgress >
+    <div className="header">
 
+        <div className="header-profile">
+            <Avatar className="student-avatar"> </Avatar>
+            <h1 className="student-name">Welcome Tal Zaidman </h1>
+        </div>
+        <div className="header-status">
+            <div className="progress-row">
+                <h3 className="level-number">Level 5</h3>
+                <StudentProgress className="level-progress"> </StudentProgress >
+            </div>
 
+            <div className="progress-row">
+                <h4 className="points-next-level"> XP 2 next lvl </h4>
+                <StudentProgress className="student-progress"> </StudentProgress >
 
-        </ListItem>
-    </List>
+            </div>
+        </div>
+
+        <RaisedButton className="avatar-store-btn" label="Go to Avatar Store"/>
+    </div>
 );
 
 export default StudentProfile;
