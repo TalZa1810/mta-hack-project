@@ -17,3 +17,6 @@ yarn-debug.log*
 yarn-error.log*
 tasks.xml
 *.iws
+
+# Folders
+/.idea
