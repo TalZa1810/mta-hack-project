@@ -10,27 +10,51 @@ class SubjectItemContainer extends React.Component {
         alert('submit');
     };
 
+    handleExerciseClick(event, parm) {
+
+    };
+
     state = {
-        questionNumber: 1,
-        points: 10,
-        teacherRating: 4,
-        title: "Exercise 1",
         style: {
             margin: 6
+        },
+        subjectItems: [{
+            questionNumber: 1,
+            questionText:'What is the sqaure root of 25?',
+            points: 10,
+            teacherRating: 4,
+            title: "Exercise 1",
+        }, {
+            questionNumber: 2,
+            questionText:'What is the capital of Norway?',
+            points: 7,
+            teacherRating: 2,
+            title: "Exercise 2",
+        }, {
+            questionNumber: 3,
+            questionText:'What is the complexity runtime of D\'jakstra over an non-cyclical graph?',
+            points: 10,
+            teacherRating: 4,
+            title: "Exercise 3",
         }
-
+        ]
     };
 
     render() {
         return (
             <div className="subject-container">
-                <SubjectItem
-                    handleRaiseAQuestionClick={this.handleRaiseAQuestionClick}
-                    handleSubmitClick={this.handleSubmitClick}
-                    title={this.state.title}
-                    points={this.state.points}
-                    teacherRating={this.state.teacherRating}
-                />
+                {this.state.subjectItems.map((item, index)=> {
+                    return <SubjectItem
+                        key={item.questionNumber}
+                        handleRaiseAQuestionClick={this.handleRaiseAQuestionClick}
+                        handleSubmitClick={this.handleSubmitClick}
+                        handleExerciseClick={this.handleExerciseClick}
+                        title={item.title}
+                        points={item.points}
+                        teacherRating={item.teacherRating}
+                    />
+                })}
+
             </div>
         )
     }
