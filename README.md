@@ -4,9 +4,13 @@ Starter kit for the MTA hackathon
 This repository ended up being the branch that we managed the hackathon development.
 We started up aiming to learn some react.js while the entire dev team had never done any front-end work before, use
 of Material UI was also added in later.
-
-
 You can see the product of our labor here, just to mention that the our pitch got us to the finals in the hackathon!
+## New Frameworks used
+* react.js
+* Material UI
+* git - as a code collaboration tool
+* trello as a team managing system
+
 ## Getting Started
 
 #### Installations!
